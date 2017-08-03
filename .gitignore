@@ -1,0 +1,12 @@
+# Git ignore list...
+
+# Compiled code.
+*.o
+*.exe
+*.so
+*.dylib
+*.dSYM
+*.a
+login_server
+
+build/

@@ -1,0 +1,3 @@
+[submodule "lib/libsylverant"]
+	path = lib/libsylverant
+	url = https://github.com/isage/sylverant-libsylverant

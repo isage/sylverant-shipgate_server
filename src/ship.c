@@ -187,7 +187,7 @@ ship_t *create_connection_tls(int sock, struct sockaddr *addr, socklen_t size) {
 
     gnutls_certificate_server_set_request(rv->session, GNUTLS_CERT_REQUIRE);
 
-#if (SIZEOF_INT != SIZEOF_VOIDP) && (SIZEOF_LONG_INT == SIZEOF_VOIDP)
+#if defined(__x86_64__)
     gnutls_transport_set_ptr(rv->session, (gnutls_transport_ptr_t)((long)sock));
 #else
     gnutls_transport_set_ptr(rv->session, (gnutls_transport_ptr_t)sock);
